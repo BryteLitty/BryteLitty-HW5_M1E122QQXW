@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <title>Covid Tracker</title>
+  </head>
+  <body>
+    <div class="container start-container">
+      <div class="row">
+          <p class="topContainer"> PaSE COVID-19 Tracker Application</p>
+      </div>
+  </div>
+
+    <div class="container">
+      <div class="row justify-content-between">
+          <div class="col-2 box">
+              <p>Total Cases <i class="fa fa-arrow-circle-up icons"></i></p>
+              <p class="counterPara"><b>Confirmed</b></p>
+          </div>
+          <div class="col-2 box">
+              <p>Recovered <i class="fa fa-arrow-circle-down icons-green"></i></p>
+              <p class="counterPara"><b>Recovered</b></p>
+          </div>
+          <div class="col-2 box">
+              <p>Active Cases <i class="fa fa-arrow-circle-up icons"></i></p>
+              <p class="counterPara"><b>Active</b></p>
+          </div>
+          <div class="col-2 box">
+              <p>Total Deaths <i class="fa fa-arrow-circle-up icons"></i></p>
+              <p class="counterPara"><b>Deaths</b></p>
+          </div>
+      </div>
+
+    <div class="container">
+      <div class="country-table">
+        <table>
+          <tr>
+            <th>Countries</th>
+            <th>Confirmed Cases</th>
+            <th>Active Cases</th>
+            <th>Recoveries</th>
+            <th>Deaths</th>
+          </tr>
+  
+          <tbody id="tdata" class="stripped-table"></tbody>
+          <% data.forEach(function(obj){ %>
+          <tr>
+            <td><%=obj.Country_Region%></td>
+            <td><%=obj.Confirmed%></td>
+            <td><%=obj.Active%></td>
+            <td><%=obj.Recovered%></td>
+            <td><%=obj.Deaths%></td>
+          </tr>
+          <%})%>
+        </table>
+      </div>
+      <div>
+    </div>
+      
+    </div>
+    
+  </body>
+</html>

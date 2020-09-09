@@ -1,0 +1,157 @@
+:root {
+  --primarybg: rgb(255, 70, 70);
+  --secondarybg: white;
+  --box-shadow: 0 5px 10px 5px rgba(255, 2, 2, 0.322);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  position: absolute;
+  padding: 10px;
+  background-color: var(--secondarybg);
+  color: red;
+  font-size: 1rem;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.title span {
+  font-size: 70px;
+}
+
+.global-data-div {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+.global-data {
+  display: flex;
+
+  justify-content: start;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.global-data li {
+  margin: 50px;
+  padding: 30px;
+  background-color: var(--secondarybg);
+  color: red;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.country-table {
+  margin: 0 0 0 3%;
+  width: 65%;
+  position: absolute;
+  top: 350px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: var(--primarybg);
+  color: white;
+}
+
+tr:nth-child(odd) {
+  color: red;
+}
+
+th {
+  background-color: var(--primarybg);
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+td {
+  text-align: center;
+  height: 20px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.aside-here {
+  width: 30%;
+  position: absolute;
+  padding: 20px;
+  top: 360px;
+  right: 0;
+}
+
+.sidenotes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.sidenotes li {
+  padding: 20px;
+  margin: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  color: red;
+}
+
+.topContainer{
+  color: red;
+}
+
+.box{
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(255, 61, 0, 0.1);
+}
+
+.counterPara{
+  font-size: 20px;
+}
+
+.icons{
+  font-size: 14px;
+  color: red;
+}
+
+.icons-green{
+  color: green;
+}
+
+.innerBoxPadding{
+ padding-top: 10px;
+ padding-bottom: 70px; 
+}
+
+.inner-box{
+  background-color: rgba(255, 61, 0, 0.1);
+  color: red;
+  text-align: center;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.side-box{
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(59, 68, 11, 0.3);
+}
+
+.start-container{
+  margin-top: 30px;
+}
